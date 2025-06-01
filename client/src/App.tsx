@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { use, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { api } from './services/api.service'
@@ -6,12 +6,7 @@ import ROUTES from '@/ROUTES'
 
 function App() {
   const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    api(`${ROUTES.app.food}`)
-    .then((res) => console.log(res.data))
-  }, [])
-
+  
   return (
     <>
       <div>

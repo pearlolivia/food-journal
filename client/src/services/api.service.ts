@@ -1,6 +1,6 @@
 export const api = async (endpoint: string, body?: any) => {
     const method = body ? 'POST' : 'GET'
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/${endpoint}`, {
+    return await fetch(`${import.meta.env.VITE_API_URL}/${endpoint}`, {
         method,
         headers: {
             'Content-Type': 'application/json',
@@ -27,5 +27,5 @@ export const api = async (endpoint: string, body?: any) => {
         return errRes
     })
 
-    return response
+    // return response
 }

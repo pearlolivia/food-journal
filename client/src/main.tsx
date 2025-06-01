@@ -8,6 +8,7 @@ import './index.css'
 const App = lazy(() => import('./App.tsx'))
 const LayoutWrapper = lazy(() => import('@/layouts/Wrapper'))
 const NotFoundPage = lazy(() => import('@/components/Pages/NotFound'))
+const Home = lazy(() => import('@/components/Pages/Home'))
 
 const root = createRoot(document.getElementById('root') as HTMLElement)
 
@@ -19,7 +20,7 @@ root.render(
           <Routes>
               {/* App */}
                 <Route path='/' element={<LayoutWrapper layout='app' />}>
-                  <Route index element={<App />} />
+                  <Route index element={<Home />} />
                 </Route>
               {/* Errors */}
               <Route path='/*' element={<NotFoundPage />} />

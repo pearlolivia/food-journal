@@ -1,1 +1,2 @@
-export { default as NotFoundPage } from './NotFound'
+export * from './Home'
+export * from './NotFound'

@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
     "@tabler/icons-react": "^3.31.0",
     "date-fns": "^4.1.0",
     "react": "^19.0.0",
@@ -18,7 +20,8 @@
     "react-router": "^7.5.3",
     "react-router-dom": "^7.5.3",
     "react-spinners": "^0.17.0",
-    "react-toastify": "^11.0.5"
+    "react-toastify": "^11.0.5",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
