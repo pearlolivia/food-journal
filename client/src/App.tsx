@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    api(`${ROUTES.app.example}`)
+    api(`${ROUTES.app.food}`)
     .then((res) => console.log(res.data))
   }, [])
 

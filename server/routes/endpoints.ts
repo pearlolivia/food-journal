@@ -1,6 +1,8 @@
 const endpoints = {
     app: {
-        example: '/example'
+        example: '/example',
+        food: '/food',
+        dailyLog: '/daily-log'
     }
 }
 

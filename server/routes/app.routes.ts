@@ -1,6 +1,8 @@
-import { Request, Response, Router } from 'express'
+import { Router } from 'express'
+import BaseRouter from './baseRoute'
 import { ENDPOINTS } from './endpoints'
 import Blog from '../models/example.model'
+import Food from '../models/food.model'
 
 const router = Router()
 const ROUTES = ENDPOINTS.app
@@ -16,6 +18,20 @@ router.get(ROUTES.example, async (req, res) => {
     } catch (e) {
         res.status(500).json({ error: e })
     }
+})
+
+// Daily Log Routes
+BaseRouter(router, {
+    model: Food,
+    route: ROUTES.dailyLog,
+    excludedRoutes: []
+})
+
+// Food Routes
+BaseRouter(router, {
+    model: Food,
+    route: ROUTES.food,
+    excludedRoutes: []
 })
 
 export default router
