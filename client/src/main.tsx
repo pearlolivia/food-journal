@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { ToastContainer } from 'react-toastify'
 import Loading from '@/components/Molecules/Loading'
+import './fonts/marimpa/Marimpa.ttf'
 import './index.css'
 
 const App = lazy(() => import('./App.tsx'))

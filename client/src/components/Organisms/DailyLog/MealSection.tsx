@@ -16,7 +16,7 @@ const MealSection = ({mealName}: {mealName: string}) => {
 
     return (
         <div>
-            <div className='bg-indigo-500'>{mealName}</div>
+            <div className='bg-indigo-500 font-title'>{mealName}</div>
             <div className='flex flex-col'>
                 {items.map((item, index) => (
                     <SelectDropdown

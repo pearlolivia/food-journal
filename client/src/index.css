@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+ font-family: "Marimpa";
+ src: local("Marimpa"),
+  url("./fonts/marimpa/Marimpa.ttf") format("truetype");
+ font-weight: bold;
+}
+
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Marimpa, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -42,4 +50,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.font-title {
+  font-family: Marimpa;
 }
