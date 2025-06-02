@@ -11,8 +11,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@/MODELS": ["../server/models/*"],
       "@/ROUTES": ["../server/routes/endpoints"],
-      "@/MODELS": ["../server/models/*"]
     },
 
     /* Bundler mode */

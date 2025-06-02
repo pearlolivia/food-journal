@@ -4,6 +4,9 @@ import { twMerge } from 'tailwind-merge'
 
 import { ChevronUpDownIcon } from '@heroicons/react/24/outline'
 
+/*
+add to boilerplate
+ */
 const SelectDropdown = ({ label, required, options, inputValue, handleChange, placeholder }: {
     options: any[]
     inputValue: string
@@ -27,7 +30,7 @@ const SelectDropdown = ({ label, required, options, inputValue, handleChange, pl
                 <div className='relative text-left cursor-default focus:outline-none'>
                     <Combobox.Input
                         placeholder={placeholder ?? 'Select...'}
-                        className='ring-opacity-25'
+                        className='border rounded-xl p-2'
                         displayValue={(option: any) => option.text}
                         required={required}
                         readOnly
